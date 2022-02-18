@@ -58,11 +58,12 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // // get clothes input
     const clothesInput = getInputValue('clothes-expenses-input');
     if (isNaN(clothesInput) || clothesInput < 0) {
-        return alert('Please Check Rent Amount')
+        return alert('Please Check Clothes Amount')
     }
     else {
         clothesCost = clothesInput;
     }
+
 
     // get calculate total cost
     const netTotalCost = foodCost + rentInput + clothesCost;
