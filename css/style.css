@@ -6,7 +6,9 @@
     width: 60%;
     margin-left: 50px;
 }
-
+#save-btn{
+    display: block;
+}
 /* --------------------------------------
     responsive styles
 ------------------------------------------  */
