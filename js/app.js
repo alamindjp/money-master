@@ -32,7 +32,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // get incomeInput
     const incomeInput = getInputValue('total-income');
     if (isNaN(incomeInput) || incomeInput <= 0) {
-        return alert('Please Check Income Amount')
+        return alert('Please Check Your Income Amount')
     }
     else {
         income = incomeInput;
@@ -40,7 +40,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // // get food input
     const foodInput = getInputValue('food-expenses-input');
     if (isNaN(foodInput) || foodInput < 0) {
-        return alert('Please Check Food Amount')
+        return alert('Please Check Your Food Amount')
     }
     else {
         foodCost = foodInput;
@@ -49,7 +49,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // // get rent input
     const rentInput = getInputValue('rent-expenses-input');
     if (isNaN(rentInput) || rentInput < 0) {
-        return alert('Please Check Rent Amount')
+        return alert('Please Check Your Rent Amount')
     }
     else {
         rentCost = rentInput;
@@ -58,7 +58,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // // get clothes input
     const clothesInput = getInputValue('clothes-expenses-input');
     if (isNaN(clothesInput) || clothesInput < 0) {
-        return alert('Please Check Clothes Amount')
+        return alert('Please Check Your Clothes Amount')
     }
     else {
         clothesCost = clothesInput;
@@ -68,7 +68,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // get calculate total cost
     const netTotalCost = foodCost + rentInput + clothesCost;
     if (netTotalCost > income) {
-        return alert('Please Check, Income Amount and Total Cost Amount')
+        return alert('Please Check Your, Income Amount and Total Cost Amount')
     }
     else {
         calculateCost('total-expenses', netTotalCost);
