@@ -6,14 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Statment</title>
+    <!-- style link  -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="mb-5">
+    <!-- header section  -->
+    <section class="bg-light container-fluid">
+        <header class="text-center pt-4 pb-4 bg-light">
+            <h1 class="display-4 fw-bold text-center ">Calculate Your Income and Expenses</h1>
+        </header>
+    </section>
+    <!-- main section  -->
+    <main class="container-fluid">
+        <section class="mt-4">
+            <!-- images section  -->
+            <div class="d-lg-flex justify-content-between">
+                <div class="border rounded-3 bg-light text-center">
+                    <img class="img-fluid" src="./media/images/money-calculation.jpg">
+                </div>
+                <!-- calculate section  -->
+                <div class="calculate-area">
+                    <div class="border rounded-3 bg-light">
+                        <!-- total Income -->
+                        <h3 class="text-center mb-4">Income</h3>
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="row mb-3">
+                                <h5 class="col-4 text-end">Income :</h5>
+                                <div class="col-8"><input id="total-income"
+                                        class="p-1 px-3 border-0 rounded-3 calculate-bg" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Expenses -->
+                        <h3 class="text-center mb-4">Expenses</h3>
+                        <div class="d-flex flex-column justify-content-">
+                            <div class="row mb-3">
+                                <h5 class="col-4 text-end">food :</h5>
+                                <div class="col-8"><input id="food-expenses-input"
+                                        class="p-1 px-3 border-0 rounded-3 calculate-bg" type="text">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <h5 class="col-4 text-end">Rent :</h5>
+                                <div class="col-8"><input id="rent-expenses-input"
+                                        class="p-1 px-3 border-0 rounded-3 calculate-bg" type="text">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <h5 class="col-4 text-end">Clothes :</h5>
+                                <div class="col-8"><input id="clothes-expenses-input"
+                                        class="p-1 px-3 border-0 rounded-3 calculate-bg" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 col-4 mx-auto">
+                            <button id="calculate-btn" type="button"
+                                class="btn btn-lg btn-primary mb-4">Calculate</button>
+                        </div>
+                        <!-- total Balance -->
+                        <h3 class="text-center mb-2">Total Expenses : $ <span id="total-expenses">00</span></h3>
+                        <h3 class="text-center mb-5">Balance : $ <span id="net-balance">00</span></h3>
+                        <!-- Savings calculation  -->
+                        <div class="d-flex ">
+                            <h5 class="col-3 text-end mt-1">Save :</h5>
+                            <div class="col-4"><input id="saveings-persrnts"
+                                    class="p-2 px-3 border-0 rounded-3 mx-3 col-10 calculate-bg " type="text"></div>
+                            <p class="fs-4 ms-sm-2">%</p>
+                            <button type="button" id="savings-btn"
+                                class="btn btn-primary text-center save-btn ms-2 ms-sm-5 mb-5">Save</button>
+                        </div>
+                        <!-- Saving ammount & Remaining Balance -->
+                        <h3 class="text-center mb-3">Saving Amount : $ <span id="saving-amount">000</span></h3>
+                        <h3 class="text-center mb-5">Remaining Balance : $ <span id="remaining-balance">000</span></h3>
+                    </div>
+                </div>
+
+        </section>
+    </main>
 
 
-
-
+    <!-- javascript link  -->
     <script src="./js/app.js"></script>
 </body>
 
